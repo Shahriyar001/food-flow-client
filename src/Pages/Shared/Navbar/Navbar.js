@@ -1,11 +1,18 @@
-import React from 'react';
+import React, { useContext } from 'react';
 import { Link } from 'react-router-dom';
 import img from "../../../assets/images/download__1_-removebg-preview.png";
+import { AuthContext } from '../../../contexts/AuthProvider';
 
 const Navbar = () => {
+    const { user, logOut } = useContext(AuthContext);
+    const handleLogOut = () => {
+        logOut()
+            .then(() => { })
+            .catch(err => console.log(err));
+    }
     return (
         <div>
-            <div className="navbar bg-inherit py-1 mt-2">
+            <div className="navbar bg-neutral text-white pt-2 ">
                 <div className="flex-1">
                     <img className='w-32' src={img} alt="" />
                     <a className="btn btn-ghost normal-case text-2xl font-bold">Food Flow</a>
@@ -22,15 +29,15 @@ const Navbar = () => {
                     </div>
                     <div className='mx-4' >
 
-                        {/* {user?.uid ?
-                        <>
-                            <button onClick={handleLogOut} className='btn btn-primary'>Sign out</button>
-                        </>
-                        : <button className='btn btn-primary'><Link to="/login">Log In</Link></button>} */}
+                        {user?.uid ?
+                            <>
+                                <button onClick={handleLogOut} className='btn btn-primary'>Sign out</button>
+                            </>
+                            : <button className='btn btn-primary'><Link to="/login">Log In</Link></button>}
                     </div>
                 </div>
             </div>
-            <div className="navbar bg-base-100">
+            <div className="navbar bg-neutral text-white">
                 <div className="flex-none">
                     <ul className="menu menu-horizontal px-1">
                         <li><Link to="/">Home</Link></li>
@@ -38,11 +45,11 @@ const Navbar = () => {
                         <li><a>About us</a></li>
                         <li><a>Blog</a></li>
                         <li><a>Contact Us</a></li>
-                        {/* {user?.uid ?
-                        <>
-                            < li > <Link to="/dashboard">Deshboard</Link></li>
-                        </>
-                        : <button className='btn btn-primary opacity-0'><Link to="/">Log In</Link></button>} */}
+                        {user?.uid ?
+                            <>
+                                < li > <Link to="/dashboard">Deshboard</Link></li>
+                            </>
+                            : <button className='btn btn-primary opacity-0'><Link to="/"></Link></button>}
 
 
                     </ul>
