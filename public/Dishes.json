@@ -1,0 +1,66 @@
+[
+    {
+        "_id": "1",
+        "title": "Moroccan Egg",
+        "flex": "lg:flex-row",
+        "details": "Moroccan baked eggs in rich tomato sauce. This hearty egg dish can be enjoyed on its own, with some crusty sourdough.",
+        "img": "http://bunch.asiandevelopers.com/wp/radhuni/wp-content/uploads/2015/06/image-7.jpg",
+        "price": 2.65
+    },
+    {
+        "_id": "2",
+        "title": "Bacon and Egg Salad",
+        "flex": "lg:flex-row",
+        "details": "To cook the bacon using the Mauro Method line a baking sheet with parchment, overlapping each side 1 to 2 inches. ",
+        "img": "http://bunch.asiandevelopers.com/wp/radhuni/wp-content/uploads/2015/06/image-5.jpg",
+        "price": 2.95
+    },
+    {
+        "_id": "3",
+        "title": "Sausage Bread",
+        "flex": "lg:flex-row",
+        "details": "Sausage bread is one of the more typical Chinese bakery bread, and they come in many different kinds of shapes.",
+        "img": "http://bunch.asiandevelopers.com/wp/radhuni/wp-content/uploads/2015/06/image-6.jpg",
+        "price": 3.65
+    },
+    {
+        "_id": "4",
+        "title": "Grilled Chicken",
+        "flex": "lg:flex-row",
+        "details": "Grilled Chicken is a very popular recipe made with chicken, hung curd and spices like cumin powder and black pepper.",
+        "img": "http://bunch.asiandevelopers.com/wp/radhuni/wp-content/uploads/2015/06/image-4.jpg",
+        "price": 5.65
+    },
+    {
+        "_id": "5",
+        "title": "Stir Fried Spinach with Salted Egg",
+        "flex": "lg:flex-row",
+        "details": "Having made a few salted eggs at home, I couldn’t wait to try how they tasted like and made several traditional Chinese.",
+        "img": "http://bunch.asiandevelopers.com/wp/radhuni/wp-content/uploads/2015/06/image-31.jpg",
+        "price": 2.93
+    },
+    {
+        "_id": "6",
+        "title": "Air Fryer Crispy Beef",
+        "flex": "lg:flex-row",
+        "details": "Spray the whole garlic with oil and pop into the roasting draw at 160°C for around 20 mins. ",
+        "img": "http://bunch.asiandevelopers.com/wp/radhuni/wp-content/uploads/2015/06/image-21.jpg",
+        "price": 6.65
+    },
+    {
+        "_id": "7",
+        "title": "Beef Bourguignon",
+        "flex": "lg:flex-row",
+        "details": "Beef dishes are often nostalgic. Whether it's a cultural classic like steak frites that will transport you to France.",
+        "img": "https://www.foodandwine.com/thmb/DKCB4vmC9xCs2Zkj8july78FYnk=/750x0/filters:no_upscale():max_bytes(150000):strip_icc():format(webp)/garlic-butter-prime-rib-FT-RECIPE0621-fca73e5fa8e046b0b03982757db51628.jpg",
+        "price": 8.65
+    },
+    {
+        "_id": "8",
+        "title": "Beef Wellington",
+        "flex": "lg:flex-row",
+        "details": "Beef Wellington is the ultimate elegant dish. It's not nearly as difficult to make as people think.",
+        "img": "https://www.foodandwine.com/thmb/9NR_-9DPVHQGtggcgja_a7Rlop0=/750x0/filters:no_upscale():max_bytes(150000):strip_icc():format(webp)/beef-wellington-FT-RECIPE0321-c9a63fccde3b45889ad78fdad078153f.jpg",
+        "price": 6.65
+    }
+]

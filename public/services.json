@@ -1,0 +1,26 @@
+[
+    {
+        "_id": "7",
+        "title": "OTHERS",
+        "details": "You can find food inhere any time in a day. so dont worry!",
+        "img": "http://bunch.asiandevelopers.com/wp/radhuni/wp-content/uploads/2015/06/image-11.jpg"
+    },
+    {
+        "_id": "6",
+        "title": "DINNER",
+        "details": "We serve several item in dinner time. this time we focus on spices food",
+        "img": "http://bunch.asiandevelopers.com/wp/radhuni/wp-content/uploads/2015/06/image-10-226x223.jpg"
+    },
+    {
+        "_id": "5",
+        "title": "LUNCH",
+        "details": "Lunce is a important meal for human body. so we focus to keep it hygienic",
+        "img": "http://bunch.asiandevelopers.com/wp/radhuni/wp-content/uploads/2015/06/image-9-226x223.jpg"
+    },
+    {
+        "_id": "4",
+        "title": "BREAKFAST",
+        "details": "We serve many items in BreakFast time. we have many unice items for breakfast",
+        "img": "http://bunch.asiandevelopers.com/wp/radhuni/wp-content/uploads/2015/06/image-8.jpg"
+    }
+]

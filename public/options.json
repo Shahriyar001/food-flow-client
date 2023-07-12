@@ -1,0 +1,83 @@
+[
+    {
+        "_id": "1",
+        "name": "Couple Table",
+        "img": "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcS-3lzaX5TurC_NV-ib4OxTjxagpV6Xl4yV-w&usqp=CAU",
+        "sit": "2 Chairs",
+        "slots": [
+            "04.00 PM - 05.00 PM",
+            "05.00 PM - 06.00 PM",
+            "06.00 PM - 07.00 PM",
+            "07.00 PM - 08.00 PM",
+            "08.00 PM - 09.00 PM",
+            "09.00 PM - 10.00 PM"
+        ]
+    },
+    {
+        "_id": "2",
+        "name": "Family Table small",
+        "img": "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcTF2Eu5VYszXY9e8737zA3M_V47UtsLD5CtlU4NPzEhuK4ZsoGugXT5ZWmq0BpQKECkivs&usqp=CAU",
+        "sit": "3 to 4 Chairs",
+        "slots": [
+            "04.00 PM - 05.00 PM",
+            "05.00 PM - 06.00 PM",
+            "06.00 PM - 07.00 PM",
+            "07.00 PM - 08.00 PM",
+            "08.00 PM - 09.00 PM",
+            "09.00 PM - 10.00 PM"
+        ]
+    },
+    {
+        "_id": "3",
+        "name": "Family Table medium",
+        "img": "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcT8XkEDXVmPjpTUxhYN-SgDFC7YMpCcOsd15Tr19FOKOOGuPrX2qnhcArUpOgFNMxghLqo&usqp=CAU",
+        "sit": "6 to 8 Chairs",
+        "slots": [
+            "04.00 PM - 05.00 PM",
+            "05.00 PM - 06.00 PM",
+            "06.00 PM - 07.00 PM",
+            "07.00 PM - 08.00 PM",
+            "08.00 PM - 09.00 PM",
+            "09.00 PM - 10.00 PM"
+        ]
+    },
+    {
+        "_id": "4",
+        "name": "Family Table large",
+        "img": "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcSl6lZCravm197-7Xj_By7mxjWozrHKxysxRg&usqp=CAU",
+        "sit": "10 to 15 Chairs",
+        "slots": [
+            "04.00 PM - 05.00 PM",
+            "05.00 PM - 06.00 PM",
+            "06.00 PM - 07.00 PM",
+            "07.00 PM - 08.00 PM",
+            "08.00 PM - 09.00 PM",
+            "09.00 PM - 10.00 PM"
+        ]
+    },
+    {
+        "_id": "5",
+        "name": "Live kitchen",
+        "img": "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcSoyxckh4D2rmDQ9XFECgI1IuZ7NS9Y03iolw&usqp=CAU",
+        "sit": "2 to 8 Chairs",
+        "slots": [
+            "06.00 PM - 06.30 PM",
+            "06.30 PM - 07.00 PM",
+            "07.00 PM - 07.30 PM",
+            "07.30 PM - 08.00 PM",
+            "08.00 PM - 08.30 PM",
+            "08.30 PM - 09.00 PM"
+        ]
+    },
+    {
+        "_id": "6",
+        "name": "Buffet",
+        "img": "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcRi4k8rbBgBm4RBym_l2XwxJKPz9hV8D57aIQ&usqp=CAU",
+        "sit": "20 to 50 Chairs",
+        "slots": [
+            "06.00 PM - 08.00 PM",
+            "08.00 PM - 10.00 PM",
+            "10.00 PM - 12.00 PM"
+        ]
+    }
+]

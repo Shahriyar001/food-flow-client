@@ -1,0 +1,26 @@
+[
+    {
+        "_id": "7",
+        "title": "Masum Rana",
+        "details": "Sous chef",
+        "img": "http://bunch.asiandevelopers.com/wp/radhuni/wp-content/uploads/2015/06/team-img-4.jpg"
+    },
+    {
+        "_id": "6",
+        "title": "Muhidur Rashid",
+        "details": "Butcher chef",
+        "img": "http://bunch.asiandevelopers.com/wp/radhuni/wp-content/uploads/2015/06/team-img-3.jpg"
+    },
+    {
+        "_id": "5",
+        "title": "Jannatul Ferdose",
+        "details": "Pastry chef",
+        "img": "http://bunch.asiandevelopers.com/wp/radhuni/wp-content/uploads/2015/06/team-img-2.jpg"
+    },
+    {
+        "_id": "4",
+        "title": "Rashed Kabir",
+        "details": "Roast chef",
+        "img": "http://bunch.asiandevelopers.com/wp/radhuni/wp-content/uploads/2015/06/team-img-1.jpg"
+    }
+]
