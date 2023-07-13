@@ -1,16 +1,28 @@
 import React, { useEffect, useState } from 'react';
 import SpecialRacipeCard from './SpecialRacipeCard';
 import img from "../../../assets/images/underline1.png";
+import { useQuery } from 'react-query';
+import FoosModal from './FoodModal/FoosModal';
 
 const SpecialRacipe = () => {
-    const [products, setProducts] = useState();
-    useEffect(() => {
-        fetch('Dishes.json')
-            .then(res => res.json())
-            .then(data => setProducts(data))
-    }, [])
-    console.log(products)
+    const [singpro, setSingpro] = useState(null);
+    console.log(singpro)
 
+    const { data: products = [] } = useQuery({
+        queryKey: ['dishes'],
+        queryFn: () => fetch('http://localhost:5000/dishes')
+            .then(res => res.json())
+    })
+
+    // const [products, setProducts] = useState();
+    // useEffect(() => {
+    //     fetch('Dishes.json')
+    //         .then(res => res.json())
+    //         .then(data => setProducts(data))
+    // }, [])
+    // console.log(products)
+
+    // http://localhost:5000/dishes
     return (
         <div className='mt-10 ml-16'>
             <div>
@@ -23,9 +35,17 @@ const SpecialRacipe = () => {
                     products?.map(product => <SpecialRacipeCard
                         key={product._id}
                         product={product}
+                        setSingpro={setSingpro}
                     ></SpecialRacipeCard>)
                 }
             </div>
+            {
+                singpro &&
+                <FoosModal
+                    singpro={singpro}
+                    setSingpro={setSingpro}
+                ></FoosModal>
+            }
         </div>
     );
 };

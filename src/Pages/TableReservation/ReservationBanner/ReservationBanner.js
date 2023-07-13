@@ -6,7 +6,7 @@ const ReservationBanner = () => {
             <div className="hero-overlay bg-opacity-50"></div>
             <div className="hero-content text-center text-neutral-content">
                 <div className="max-w-md text-white">
-                    <h1 className="mb-5 text-5xl font-bold">Table Booking</h1>
+                    <h1 className="mb-5 text-5xl font-bold">Table Reservation</h1>
                     <p className="mb-5">This is the page from where you can book table for your reservation.</p>
                     <button className="btn btn-error text-white">Get Started</button>
                 </div>

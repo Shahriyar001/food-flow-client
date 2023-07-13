@@ -23,12 +23,13 @@ const DashboardLayout = () => {
                         {/* Sidebar content here */}
                         <li><Link to='/dashboard'>Status</Link></li>
                         <li><Link to='/dashboard/mytable'>My Table</Link></li>
-
-                        <li><a>Sidebar Item 2</a></li>
+                        <li><Link to='/dashboard/myorder'>My Order</Link></li>
 
                         {
                             isAdmin && <>
                                 <li><Link to='/dashboard/users'>All Users</Link></li>
+                                <li><Link to='/dashboard/addChef'>Add Chef</Link></li>
+                                <li><Link to='/dashboard/manageChefs'>Manage Chef</Link></li>
                             </>
                         }
                     </ul>

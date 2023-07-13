@@ -2,11 +2,11 @@ import React, { useContext } from 'react';
 import { AuthContext } from '../../../contexts/AuthProvider';
 import { useQuery } from 'react-query';
 
-const MyTable = () => {
+const MyOrder = () => {
     const { user } = useContext(AuthContext);
     console.log(user)
 
-    const url = `http://localhost:5000/bookings?email=${user.email}`;
+    const url = `http://localhost:5000/foodBooking?email=${user.email}`;
 
     const { data: bookings = [] } = useQuery({
         queryKey: ['bookings', user?.email],
@@ -26,10 +26,9 @@ const MyTable = () => {
                     <thead>
                         <tr>
                             <th>No</th>
+                            <th>Avatar</th>
                             <th>Name</th>
-                            <th>Table</th>
-                            <th>Date</th>
-                            <th>Time</th>
+                            <th>status</th>
                         </tr>
                     </thead>
                     <tbody>
@@ -37,10 +36,13 @@ const MyTable = () => {
                         {
                             bookings?.map((booking, i) => <tr key={booking._id}>
                                 <th>{i + 1}</th>
-                                <td>{booking.user}</td>
-                                <td>{booking.table}</td>
-                                <td>{booking.bookingDate}</td>
-                                <td>{booking.slot}</td>
+                                <td><div className="avatar">
+                                    <div className="w-24 rounded">
+                                        <img src={booking.img} alt='/' />
+                                    </div>
+                                </div></td>
+                                <td>{booking.title}</td>
+                                <td>preparing..</td>
                             </tr>)
                         }
 
@@ -53,4 +55,4 @@ const MyTable = () => {
     );
 };
 
-export default MyTable;
+export default MyOrder;

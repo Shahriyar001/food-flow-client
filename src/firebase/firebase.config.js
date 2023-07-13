@@ -11,7 +11,7 @@ const firebaseConfig = {
     // storageBucket: process.env.REACT_APP_storageBucket,
     // messagingSenderId: process.env.REACT_APP_messagingSenderId,
     // appId: process.env.REACT_APP_appId,
-    apiKey: "IzaSyCowIBHD9M9jw9nToCsQgWGiDQlS8uKfbM",
+    apiKey: "AIzaSyCowIBHD9M9jw9nToCsQgWGiDQlS8uKfbM",
     authDomain: "food-flow-de6d0.firebaseapp.com",
     projectId: "food-flow-de6d0",
     storageBucket: "food-flow-de6d0.appspot.com",

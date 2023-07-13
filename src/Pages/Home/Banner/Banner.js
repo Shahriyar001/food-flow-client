@@ -16,7 +16,7 @@ const Banner = () => {
                     <div className='flex justify-center'>
                         <img src={logo} alt="" />
                     </div>
-                    <h1 className="mb-5 text-5xl text-white font-bold">La Uncion</h1>
+                    <h1 className="mb-5 text-5xl text-white font-bold">Food Flow</h1>
                     <p className="mb-5">Provident cupiditate voluptatem et in. Quaerat fugiat ut assumenda excepturi exercitationem quasi. In deleniti eaque aut repudiandae et a id nisi.</p>
                     <button className="btn btn-error text-white bg-red-500">Get Started</button>
                 </div>

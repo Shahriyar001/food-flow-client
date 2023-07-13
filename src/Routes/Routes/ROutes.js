@@ -10,6 +10,9 @@ import DashboardLayout from "../../Layout/DashboardLayout";
 import MyTable from "../../Pages/Dashboard/MyTable/MyTable";
 import AllUsers from "../../Pages/Dashboard/AllUsers/AllUsers";
 import AdminRoute from "../AdminRoute/AdminRoute";
+import AddChef from "../../Pages/Dashboard/AddChef/AddChef";
+import ManageChefs from "../../Pages/Dashboard/ManageChefs/ManageChefs";
+import MyOrder from "../../Pages/Dashboard/MyOrder/MyOrder";
 const router = createBrowserRouter([
     {
         path: '/',
@@ -47,8 +50,20 @@ const router = createBrowserRouter([
                 element: <MyTable></MyTable>
             },
             {
+                path: '/dashboard/myorder',
+                element: <MyOrder></MyOrder>
+            },
+            {
                 path: '/dashboard/users',
                 element: <AdminRoute><AllUsers></AllUsers></AdminRoute>
+            },
+            {
+                path: '/dashboard/addChef',
+                element: <AdminRoute><AddChef></AddChef></AdminRoute>
+            },
+            {
+                path: '/dashboard/manageChefs',
+                element: <AdminRoute><ManageChefs></ManageChefs></AdminRoute>
             }
         ]
     }

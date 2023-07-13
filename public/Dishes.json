@@ -1,6 +1,5 @@
 [
     {
-        "_id": "1",
         "title": "Moroccan Egg",
         "flex": "lg:flex-row",
         "details": "Moroccan baked eggs in rich tomato sauce. This hearty egg dish can be enjoyed on its own, with some crusty sourdough.",
@@ -8,7 +7,6 @@
         "price": 2.65
     },
     {
-        "_id": "2",
         "title": "Bacon and Egg Salad",
         "flex": "lg:flex-row",
         "details": "To cook the bacon using the Mauro Method line a baking sheet with parchment, overlapping each side 1 to 2 inches. ",
@@ -16,7 +14,6 @@
         "price": 2.95
     },
     {
-        "_id": "3",
         "title": "Sausage Bread",
         "flex": "lg:flex-row",
         "details": "Sausage bread is one of the more typical Chinese bakery bread, and they come in many different kinds of shapes.",
@@ -24,7 +21,6 @@
         "price": 3.65
     },
     {
-        "_id": "4",
         "title": "Grilled Chicken",
         "flex": "lg:flex-row",
         "details": "Grilled Chicken is a very popular recipe made with chicken, hung curd and spices like cumin powder and black pepper.",
@@ -32,7 +28,6 @@
         "price": 5.65
     },
     {
-        "_id": "5",
         "title": "Stir Fried Spinach with Salted Egg",
         "flex": "lg:flex-row",
         "details": "Having made a few salted eggs at home, I couldn’t wait to try how they tasted like and made several traditional Chinese.",
@@ -40,7 +35,6 @@
         "price": 2.93
     },
     {
-        "_id": "6",
         "title": "Air Fryer Crispy Beef",
         "flex": "lg:flex-row",
         "details": "Spray the whole garlic with oil and pop into the roasting draw at 160°C for around 20 mins. ",
@@ -48,7 +42,6 @@
         "price": 6.65
     },
     {
-        "_id": "7",
         "title": "Beef Bourguignon",
         "flex": "lg:flex-row",
         "details": "Beef dishes are often nostalgic. Whether it's a cultural classic like steak frites that will transport you to France.",
@@ -56,7 +49,6 @@
         "price": 8.65
     },
     {
-        "_id": "8",
         "title": "Beef Wellington",
         "flex": "lg:flex-row",
         "details": "Beef Wellington is the ultimate elegant dish. It's not nearly as difficult to make as people think.",
