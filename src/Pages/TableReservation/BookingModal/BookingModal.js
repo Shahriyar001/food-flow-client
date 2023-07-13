@@ -25,7 +25,7 @@ const BookingModal = ({ table, setTable, selectedDate, refetch }) => {
             phone
         }
 
-        // fetch('http://localhost:5000/bookings', {
+        // fetch('https://food-flow-server.vercel.app/bookings', {
         //     method: 'POST',
         //     headers: {
         //         'Content-Type': 'application/json'
@@ -44,7 +44,7 @@ const BookingModal = ({ table, setTable, selectedDate, refetch }) => {
         //     });
 
 
-        fetch('http://localhost:5000/bookings', {
+        fetch('https://food-flow-server.vercel.app/bookings', {
             method: 'POST',
             headers: {
                 'content-type': 'application/json'

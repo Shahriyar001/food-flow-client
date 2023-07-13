@@ -16,7 +16,7 @@ const AddChef = () => {
             specialty: data.specialty
         }
 
-        fetch('http://localhost:5000/chefs', {
+        fetch('https://food-flow-server.vercel.app/chefs', {
             method: 'POST',
             headers: {
                 'content-type': "application/json"

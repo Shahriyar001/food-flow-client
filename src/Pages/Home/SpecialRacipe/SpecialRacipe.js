@@ -10,7 +10,7 @@ const SpecialRacipe = () => {
 
     const { data: products = [] } = useQuery({
         queryKey: ['dishes'],
-        queryFn: () => fetch('http://localhost:5000/dishes')
+        queryFn: () => fetch('https://food-flow-server.vercel.app/dishes')
             .then(res => res.json())
     })
 
@@ -22,7 +22,7 @@ const SpecialRacipe = () => {
     // }, [])
     // console.log(products)
 
-    // http://localhost:5000/dishes
+    // https://food-flow-server.vercel.app/dishes
     return (
         <div className='mt-10 ml-16'>
             <div>

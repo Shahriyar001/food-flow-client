@@ -15,7 +15,7 @@ const AvailableTable = ({ selectedDate }) => {
     const { data: tableOptions = [], refetch, isLoading } = useQuery({
         queryKey: ['tableOptions', date],
         queryFn: async () => {
-            const res = await fetch(`http://localhost:5000/options?date=${date}`)
+            const res = await fetch(`https://food-flow-server.vercel.app/options?date=${date}`)
             const data = await res.json();
             return data
         }
@@ -26,7 +26,7 @@ const AvailableTable = ({ selectedDate }) => {
     }
 
     // useEffect(() => {
-    //     fetch('http://localhost:5000/options')
+    //     fetch('https://food-flow-server.vercel.app/options')
     //         .then(res => res.json())
     //         .then(data => setTableOptions(data))
     // }, [])

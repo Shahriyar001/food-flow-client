@@ -14,7 +14,7 @@ const ManageChefs = () => {
         queryKey: ['chefs'],
         queryFn: async () => {
             try {
-                const res = await fetch('http://localhost:5000/chefs');
+                const res = await fetch('https://food-flow-server.vercel.app/chefs');
                 const data = await res.json();
                 return data;
             }
@@ -25,7 +25,7 @@ const ManageChefs = () => {
     })
 
     const handleDeleteChef = chef => {
-        fetch(`http://localhost:5000/chefs/${chef._id}`, {
+        fetch(`https://food-flow-server.vercel.app/chefs/${chef._id}`, {
             method: 'DELETE',
             headers: {
 

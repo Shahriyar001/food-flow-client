@@ -6,7 +6,7 @@ const MyOrder = () => {
     const { user } = useContext(AuthContext);
     console.log(user)
 
-    const url = `http://localhost:5000/foodBooking?email=${user.email}`;
+    const url = `https://food-flow-server.vercel.app/foodBooking?email=${user.email}`;
 
     const { data: bookings = [] } = useQuery({
         queryKey: ['bookings', user?.email],

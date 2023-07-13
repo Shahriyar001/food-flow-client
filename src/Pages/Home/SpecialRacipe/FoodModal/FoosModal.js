@@ -21,7 +21,7 @@ const FoosModal = ({ singpro, setSingpro }) => {
         }
         console.log(bookings)
 
-        fetch('http://localhost:5000/foodBooking', {
+        fetch('https://food-flow-server.vercel.app/foodBooking', {
             method: 'POST',
             headers: {
                 'content-type': 'application/json'
