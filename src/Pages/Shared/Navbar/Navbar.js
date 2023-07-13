@@ -18,13 +18,13 @@ const Navbar = () => {
                     <a className="btn btn-ghost normal-case text-2xl font-bold">Food Flow</a>
                 </div>
                 <div className="flex-none gap-2">
-                    <div className='mx-4 flex' >
-                        <h2>Mon-Set 9.00 am-19.00 pm <br />Sunday closed</h2>
+                    <div className='mx-4 flex xs:hidden sm:hidden md:hidden lg:block' >
+                        <h2>Mon-Set 9.00 am-11.59 pm <br />Sunday closed</h2>
                     </div>
-                    <div className='mx-4'>
+                    <div className='mx-4 xs:hidden  sm:hidden md:hidden lg:block'>
                         <h2>5 Green Ave, Path. <br /> Dhaka, Bangladesh</h2>
                     </div>
-                    <div className='mx-4'>
+                    <div className='mx-4 xs:hidden sm:hidden md:block lg:block'>
                         <h2> <span className='text-2xl font-semibold'>+1 222 333-44-55</span> <br /> Call us for enquiry</h2>
                     </div>
                     <div className='mx-4' >

@@ -6,6 +6,10 @@ import TableReservation from "../../Pages/TableReservation/TableReservation/Tabl
 import SignUp from "../../Pages/SignUp/SignUp";
 import Dashboard from "../../Pages/Dashboard/Dashboard/Dashboard";
 import PrivateRoute from "../PrivateRoute/PrivateRoute";
+import DashboardLayout from "../../Layout/DashboardLayout";
+import MyTable from "../../Pages/Dashboard/MyTable/MyTable";
+import AllUsers from "../../Pages/Dashboard/AllUsers/AllUsers";
+import AdminRoute from "../AdminRoute/AdminRoute";
 const router = createBrowserRouter([
     {
         path: '/',
@@ -32,7 +36,21 @@ const router = createBrowserRouter([
     },
     {
         path: '/dashboard',
-        element: <PrivateRoute><Dashboard></Dashboard></PrivateRoute>
+        element: <PrivateRoute><DashboardLayout></DashboardLayout></PrivateRoute>,
+        children: [
+            {
+                path: '/dashboard',
+                element: <Dashboard></Dashboard>
+            },
+            {
+                path: '/dashboard/mytable',
+                element: <MyTable></MyTable>
+            },
+            {
+                path: '/dashboard/users',
+                element: <AdminRoute><AllUsers></AllUsers></AdminRoute>
+            }
+        ]
     }
 ])
 

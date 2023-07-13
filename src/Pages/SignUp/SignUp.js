@@ -13,6 +13,7 @@ const SignUp = () => {
     // const [data, setData] = useState('');
 
     const handleSignUp = (data) => {
+        console.log(data)
         setSignUpError('');
         createUser(data.email, data.password)
             .then(result => {
@@ -23,18 +24,36 @@ const SignUp = () => {
                 }
                 updateUser(userInfo)
                     .then(() => {
-                        navigate('/');
+                        saveUser(data.name, data.email);
                     })
                     .catch(err => console.log(err))
                 toast('User Created Successfully');
 
-                // saveUser(data.name, data.email);
+
             })
             .catch(error => {
                 console.log(error)
                 setSignUpError(error.message)
             });
     }
+
+    const saveUser = (name, email) => {
+        const user = { name, email };
+        fetch('http://localhost:5000/users', {
+            method: 'POST',
+            headers: {
+                'content-type': 'application/json'
+            },
+            body: JSON.stringify(user)
+        })
+            .then(res => res.json())
+            .then(data => {
+                console.log("save user", data);
+                navigate('/');
+
+            })
+    }
+
     return (
         <div>
             <div className="hero min-h-screen" style={{ backgroundImage: 'url(https://i.ibb.co/RSXNJJG/Screenshot-34.png)' }}>
@@ -51,7 +70,7 @@ const SignUp = () => {
                                     <label className="label">
                                         <span className="label-text text-white">Name</span>
                                     </label>
-                                    <input type="text" {...register("Name", { required: "Name is required" })}
+                                    <input type="text" {...register("name", { required: "Name is required" })}
                                         className="input input-ghost input-bordered input-error w-full " />
                                     {errors.name && <p className='text-red-400'>{errors.name?.message}</p>}
 
